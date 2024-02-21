@@ -44,5 +44,32 @@
         result.innerHTML = `Correct: ${correct} | Wrong: ${wrong}`;
     }
 </script>
+
+<h4>Click On Image</h4>
+
+<div>
+    <img src="pepsi.jpg" id="Image" width="150" height="150" onclick="selectImage()">
+  </div>
+
+  <script>
+        var useImage = 1
+        function selectImage() {
+            switch (useImage) {
+                case 1:
+                    document.getElementById("Image").src = "pepsi.jpg";
+                    useImage++
+                    break
+                case 2:
+                    document.getElementById("Image").src = "Royal stag.jpg";
+                    useImage++
+                    break
+                case 3:
+                    document.getElementById("Image").src = "sprite.jpg";
+                    useImage = 1
+                    break
+                default:
+            }
+        }
+           </script>
 </body>
 </html> 
