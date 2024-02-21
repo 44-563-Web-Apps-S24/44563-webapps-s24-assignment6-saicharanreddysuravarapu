@@ -2,3 +2,8 @@
 # WebApps-S24-Assignment-6
 Introduction to Java Script and DOM
 
+Hosted at :https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment6-saicharanreddysuravarapu/animal.html
+
+Hosted at :https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment6-saicharanreddysuravarapu/discount.html
+
+Hosted at :https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment6-saicharanreddysuravarapu/packing.html
