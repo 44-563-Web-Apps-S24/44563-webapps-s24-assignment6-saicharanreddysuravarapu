@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment:06</title>
+     </head>
+ 
+ <body>
+
+<h1>Sai Charan Reddy Suravarapu packs for a trip</h1>
+
+<form>
+    <label for="light"><input type="checkbox" id="light" value="true">Pack Light </label>
+    <br>
+    <label for="carry"><input type="checkbox" id="carry" value="true">Carry On</label>
+    <br>
+    <label for="tablet"><input type="checkbox" id="tablet" value="false">Tablet</label>
+    <br>
+ </form>
+
+ <br>
+ <button onclick="selectPack()">Select for packing</button>
+ <br>
+ <p id="results"></p>
+
+ <script>
+    let my_pack = {};
+
+    function selectPack() {
+
+
+        let my_pack = {};
+
+
+        my_pack.light = document.getElementById("light").checked;
+        my_pack.carry = document.getElementById("carry").checked;
+        my_pack.tablet = document.getElementById("tablet").checked;
+
+        document.getElementById("results").textContent = JSON.stringify(my_pack);
+
+    }
+    
+ </script>
+</body>
+</html>
