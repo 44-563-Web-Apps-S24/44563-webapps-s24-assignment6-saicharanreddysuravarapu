@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment:06</title>
+     </head>
+ 
+ <body>
+
+ <h1> Sai Charan Reddy Suravarapu discount calculations </h1>
+
+
+<form>
+    <label for="price">Enter price per : </label>
+    <input type="number" id="price"  value="20">
+    <br>
+    <label for="count">Enter the number of items : </label>
+    <input type="number" id="count"  value="10">
+    <br>
+    <label for="reductions">Enter the discount percentage : </label>
+    <input type="number" id="reductions" value="5">
+    <br>
+    <button type="button" onclick="discount()">Show Total</button>
+
+</form>
+<p id="totals"></p>
+<script>
+   function discount() {
+   let price = parseFloat(document.getElementById("price").value);
+   let number = parseFloat(document.getElementById("count").value);
+   let reduction = parseFloat(document.getElementById("reductions").value);
+   let myOutput = "";
+
+   for (let i = 0; i < 5; i++) {
+       let discountedPrice = price * number - (price * number * (reduction / 100));
+       myOutput += `${reduction}% is ${discountedPrice.toFixed(1)}; `;
+       reduction++;
+   }
+
+   document.getElementById('totals').innerHTML = 'Totals are: ' + myOutput;
+}
+</script>
+</body>
+</html>
